@@ -42,6 +42,3 @@ Network Trash Folder
 Temporary Items
 .apdisk
 projects/projects/migrations
-.idea/
-db.sqlite3
-*/__pycache__
