@@ -1,0 +1,20 @@
+﻿{% extends "base.html" %}
+<p>Database is empty!</p>
+{% block content %}
+{% for project in projects %}
+<div class="ui piled segment">
+    <section>
+        <a href="/projects/{{ project.id }}">
+  <h4 class="ui header">{{ project.name }}</h4>
+    {{ project.pub_date }}
+        </section>
+</div>
+{% endfor %}
+
+<a href="/new_project">
+<div class="ui basic button">
+  <i class="add circle icon"></i>
+  Add project
+</div>
+</a>
+{% endblock %}
